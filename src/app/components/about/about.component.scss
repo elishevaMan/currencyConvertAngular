@@ -1,0 +1,37 @@
+
+@import "../../common/styles/breakpoints.module.scss";
+.history-title
+{
+    margin-top: 10%;
+}
+
+.currency-history-img
+{
+    width: 15%;
+}
+.currency-history-img-row
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  @include responsive("lg") {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+
+.title-converter
+{
+    text-align: center;
+    color: #CFA53D;
+    font-weight: 800;
+
+}
+
+
+

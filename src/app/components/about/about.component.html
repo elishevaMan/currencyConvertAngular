@@ -1,0 +1,20 @@
+<div style="padding-bottom: 10%;"  >
+  <h4 class="title-converter history-title">History Currency Converter</h4>
+
+<div class="currency-history-img-row">
+<img class="currency-history-img" src="../../assets/Images/coin_thumbs__up.svg"                         
+alt="loading..." />
+<img class="currency-history-img" src="../../assets/Images/coin_thumbs__up.svg" alt="loading..." />
+<img  class="currency-history-img" src="../../assets/Images/coin_thumbs__up.svg" alt="loading..." />
+</div>
+
+
+<ul style="list-style-type:none;" >
+  <li *ngFor="let history of converterHistory"  >
+<div class="second-row"> 
+  {{history.amount }}   {{history.from}}  = {{history.result }}  {{history.to }}
+</div>
+</li>
+</ul>
+
+</div>

@@ -1,0 +1,49 @@
+<div class="container-converter">
+
+    <h4 class="title-converter">Currency Converter</h4>
+    <div class="first-row">
+      <input class="amount-input" type="number" required  [(ngModel)]="amount" (ngModelChange)="onChange()"  >
+    <label style="align-self:flex-end;">From:</label> 
+      <select
+      [ngModel]="''" (ngModelChange)="from = $event; onChange()"
+        class="form-control form-1 currency-type-input"
+         id="fromCurrency"
+      >
+        <option value=""></option>
+          <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+      </select>
+      <label style="align-self:flex-end;">To:</label> 
+
+      <select
+      [ngModel]="''" (ngModelChange)="to = $event; onChange()"
+
+        class="form-control form-1 currency-type-input"
+        id="toCurrency"
+      >
+        <option value=""></option>
+          <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+      </select>
+    </div>
+
+<div > 
+    <div class="currency_img">
+    <img src="../../assets/Images/coin_thumbs__up.svg" alt="loading..." />
+    </div>
+    <div  [ngStyle]="{'display': (showResult===2) ? 'flex' : 'none'}"  class="second-row">
+      <label> {{this.amount}} </label>
+      <label> {{this.from}} </label>
+    <label> = </label>
+      <label>{{result}} </label>
+      <label> {{this.to}} </label>
+    </div>
+
+    <h4    [ngStyle]="{'display': (showResult===1) ? 'block' : 'none'}" class="title-converter"> convert please wait....</h4>
+
+
+
+    
+  
+
+  
+
+
