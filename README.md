@@ -5,6 +5,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 In the project directory, you can run:
 
 npm i
-ng serve
-מnn
-מע 
+ng serve 
